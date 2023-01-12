@@ -1,0 +1,26 @@
+.header {
+  background-color: var(--green-bg);
+}
+.header__container {
+  display: flex;
+  min-height: 86px;
+  align-items: center;
+}
+
+.header__logo {
+}
+
+.header__menu {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+}
+
+.menu__list {
+  display: flex;
+  text-decoration: none;
+  gap: 43px;
+  opacity: 0.5;
+  color: white;
+  font-style: normal;
+}

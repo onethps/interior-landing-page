@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --min-width: 320px;
+  --max-width: 1199.98px;
+  --xm: 990.98px;
+  --xs: 767.98px;
+}
+
+body {
+  line-height: 1;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+ul,
+li,
+a {
+  all: unset;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+[class*="__container"] {
+  max-width: var(--max-width);
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1199.98px) {
+  [class*="__container"] {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 990.98px) {
+  [class*="__container"] {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  [class*="__container"] {
+    max-width: none;
+  }
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+/* 
+.grid-container {
+  --flap: minmax(16px, 1fr);
+  --content: minmax(var(--min-width), var(--max-width));
+
+  display: grid;
+  grid-template-columns:
+    var(--flap)
+    var(--content)
+    var(--flap);
+}
+
+.grid-content {
+  grid-column: 2 / 3;
+}
+
+.grid-content-full {
+  grid-column: 1 / -1;
+} */
