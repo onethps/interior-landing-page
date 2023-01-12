@@ -1,0 +1,36 @@
+.btn {
+--btn-idle-fill: var(--clr-brown-dark);
+--btn-active-fill: var(--clr-brown);
+--btn-label-color: white;
+--clr: var(--btn-idle-fill);
+
+
+    /* reset */
+    border: none;
+    background: none;
+    line-height: 20px;
+
+
+    /* styles */
+    font-weight: 400;
+    padding: 10px 16px;
+    border-radius: 15px;
+
+}
+
+
+.btn.outlined {
+    border-color: red;
+    color: yellow;
+}
+
+.btn.solid {
+    background: green;
+}
+
+.btn.hover {
+
+}
+
+
+
